@@ -6,7 +6,6 @@
     <androidx.camera.view.PreviewView
         android:id="@+id/preview_view"
         android:layout_width="match_parent"
-
         android:layout_height="match_parent"/>
     <!-- Gradient overlay on top of PreviewView -->
     <ImageButton
@@ -18,7 +17,6 @@
         android:src="@drawable/ic_action_close"
         android:layout_height="50dp"/>
     <ImageView
-
         android:layout_width="100dp"
         android:layout_alignParentEnd="true"
         android:layout_height="100dp"
@@ -45,13 +43,6 @@
         android:id="@+id/live_detection"
         android:textColor="#CD5B55"
         android:layout_height="match_parent"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:text="asdfsfs"
-        android:textColor="@color/white"
-        android:layout_height="match_parent"
-        android:id="@+id/mmmmm"
-        />
     <TextView
 
         android:layout_width="match_parent"

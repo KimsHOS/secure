@@ -30,7 +30,6 @@ import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.Surface;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -48,7 +47,6 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.content.ContextCompat;
 
-import com.example.achalasecure.AchalaSecureImpl;
 import com.example.achalasecure.R;
 import com.example.achalasecure.faceantispoofing.FaceAntiSpoofing;
 import com.example.achalasecure.mobilefacenet.MobileFaceNet;
@@ -118,7 +116,7 @@ public class CameraActivity extends AppCompatActivity {
 //    "smile", "blink",
     HashMap<String, Boolean> detectionResults = new HashMap<>();
     private int currentIndex = 0;
-    private TextView instructionToUser,instructionToUser1, liveDetection, spoofingDetected,mmmmm;
+    private TextView instructionToUser,instructionToUser1, liveDetection, spoofingDetected;
     private String userGid = "Verify_User";
     private Bitmap imageFromThePath;
     private boolean isRegistration;
@@ -135,7 +133,7 @@ public class CameraActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_camera12);
+        setContentView(R.layout.activity_camera_lib);
         getWindow().setStatusBarColor(getResources().getColor(R.color.white)); // Replace with your color
 
         // Set the icons color to dark
