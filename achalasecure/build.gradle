@@ -26,6 +26,12 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+    task clearAllCache {
+        doLast {
+            delete rootProject.buildDir
+            delete new File(rootProject.gradle.gradleUserHomeDir, 'caches')
+        }
+    }
 }
 
 
@@ -115,6 +121,7 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite-gpu-api:2.11.0'
     implementation 'org.tensorflow:tensorflow-lite-support:0.4.2'
     implementation 'com.google.code.gson:gson:2.11.0'
+
 
     implementation 'com.github.f0ris.sweetalert:library:1.5.1'
 
